@@ -1,13 +1,19 @@
+html, body {
+  height: 100%;
+}
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #000;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar {
-  background: #111;
+  background: #000;
   color: #fff;
   display: flex;
   align-items: center;
@@ -98,20 +104,27 @@ nav a.active::after {
 }
 
 .home-content button {
-  background: #2563eb;
+  background: rgba(20, 20, 20, 0.6);
   color: #fff;
-  font-size: 1.1rem;
-  padding: 12px 32px;
-  border: none;
-  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 16px 36px;
+  border: 2px solid rgba(255,255,255,0.18);
+  border-radius: 12px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background 0.2s;
-  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.12);
+  font-family: inherit;
+  box-shadow: none;
+  transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .home-content button:hover {
-  background: #1741a6;
+  background: rgba(40, 40, 40, 0.7);
+  border-color: rgba(255,255,255,0.28);
 }
 
 .home-image {
@@ -138,16 +151,20 @@ nav a.active::after {
   background: #232a36;
   color: #bdbdbd;
   border: none;
-  border-radius: 10px;
-  padding: 12px 28px;
+  border-radius: 12px;
+  padding: 16px 32px;
   font-size: 1.1rem;
   cursor: pointer;
   margin-bottom: 8px;
   transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .tab.active, .tab:hover {
-  background: #2563eb;
+  background: #a259ff;
   color: #fff;
 }
 
@@ -214,7 +231,7 @@ nav a.active::after {
 }
 
 footer {
-  background: #111;
+  background: #000;
   color: #bdbdbd;
   text-align: center;
   padding: 18px 0;
@@ -222,6 +239,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 1rem;
+  margin-top: auto;
 }
 
 /* About Section Styles */
@@ -234,8 +252,7 @@ footer {
   letter-spacing: 1px;
 }
 .about-highlight {
-  color: #4f8cff;
-  /* Use your preferred purple, e.g. #7c3aed or #a259ff if you want purple instead of blue */
+  color: #a259ff;
   font-size: 1.1em;
 }
 .about-subtitle {
