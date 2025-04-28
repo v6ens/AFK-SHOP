@@ -8,16 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar --><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AFK SHOP</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
   <!-- Navbar -->
   <header class="navbar">
     <a href="#home" class="logo" onclick="showSection('home')">AFK SHOP</a>
@@ -57,24 +47,24 @@
     </div>
     <div class="products-grid">
       <div class="product-card">
-        <img src="https://i.imgur.com/yourkit1.png" alt="PVP Kit V2">
-        <h2>PVP Kit V2</h2>
+        <img src="https://media.discordapp.net/ephemeral-attachments/1361138036674400349/1363911440288714893/Screenshot_2025-04-20_083911.png?ex=680faa03&is=680e5883&hm=263333e12eb16ccad0f4d74f0772a6588b68f4ba230a6f3fdb9934f37d0d3eff&=&format=webp&quality=lossless&width=419&height=143" alt="Firework Rockets T3">
+        <h2>Firework Rockets T3</h2>
         <p>$0.50</p>
-        <p class="stock">Stock: 12</p>
+        <p class="stock">Stock: 0</p>
         <button>Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="https://i.imgur.com/yourkit2.png" alt="Survival Kit V3">
-        <h2>Survival Kit V3</h2>
-        <p>$0.60</p>
-        <p class="stock">Stock: 16</p>
+        <img src="https://media.discordapp.net/ephemeral-attachments/1361138036674400349/1363912094054875336/Screenshot_2025-04-21_111925.png?ex=680faa9f&is=680e591f&hm=342ba3101fa926ff091e25353fbd8952d2d0e5028b22f71f34bb4f0243624838&=&format=webp&quality=lossless&width=409&height=136" alt="AFK Totems">
+        <h2>AFK Totems</h2>
+        <p>$0.50</p>
+        <p class="stock">Stock: 0</p>
         <button>Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="https://i.imgur.com/yourkit3.png" alt="Survival Kit V2">
-        <h2>Survival Kit V2</h2>
-        <p>$0.60</p>
-        <p class="stock">Stock: 14</p>
+        <img src="https://media.discordapp.net/ephemeral-attachments/1361138036674400349/1363910112112148660/anybook.png?ex=680fa8c6&is=680e5746&hm=016871edd350d6a27cc6fc4b58fcf34850b9202cd77822c2ab0e3c54f86d93c7&=&format=webp&quality=lossless&width=413&height=146" alt="Any Enchantment Books">
+        <h2>Any Enchantment Books</h2>
+        <p>$0.69</p>
+        <p class="stock">Stock: 0</p>
         <button>Add to Cart</button>
       </div>
       <!-- Add more product cards as needed -->
@@ -84,114 +74,11 @@
   <!-- About Section -->
   <section id="about" class="about-section main-section" style="display:none;">
     <h1 class="about-title"><span class="about-highlight">About</span> AFK SHOP</h1>
-    <h3 class="about-subtitle">Our Story And Mission</h3>
+    <h3 class="about-subtitle">How We Started</h3>
     <div class="about-description">
       <p>Welcome to AFK Shop, it has been a shop on multiple servers since 2023, supplying over 2000+ people with gear! It was originally on 2b2t alternative servers like 8b8t! or 6b6t! The shop eventually got shut down for reasons.</p>
       <p>2 years later, the owners MUD and Ven decided to open a 2b2t shop where we can build stronger connections and helping others just like how we did on 8b8t or 6b6t!</p>
       <p>Too be continued...</p>
-    </div>
-  </section>
-
-  <!-- Reviews Section (placeholder) -->
-  <section id="reviews" class="reviews-section main-section" style="display:none;">
-    <h2>Reviews</h2>
-    <p>Customer reviews will go here.</p>
-  </section>
-
-  <!-- Discord Section (placeholder) -->
-  <section id="discord" class="discord-section main-section" style="display:none;">
-    <h2>Discord</h2>
-    <p>Join our Discord for support and community!</p>
-  </section>
-
-  <footer>
-    <p>© 2025 AFK SHOP. All rights reserved.</p>
-  </footer>
-
-<script src="script.js"></script>
-<script>
-function showSection(section) {
-  document.querySelectorAll('.main-section').forEach(s => s.style.display = 'none');
-  document.getElementById(section).style.display = '';
-  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-  document.querySelectorAll('nav a').forEach(a => {
-    if (a.getAttribute('href') === '#' + section) a.classList.add('active');
-  });
-}
-// Show home by default
-showSection('home');
-</script>
-</body>
-</html>
-
-  <header class="navbar">
-    <div class="logo">AFK SHOP</div>
-    <nav>
-      <a href="#home" class="active" onclick="showSection('home')">Home</a>
-      <a href="#shop" onclick="showSection('shop')">Shop</a>
-      <a href="#about" onclick="showSection('about')">About</a>
-      <a href="#reviews" onclick="showSection('reviews')">Reviews</a>
-      <a href="#discord" onclick="showSection('discord')">Discord</a>
-      <a href="#cart"><i class="fa fa-shopping-cart"></i></a>
-    </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home" class="home-section main-section">
-    <div class="home-content">
-      <h1><span style="font-weight: bold;">AFK SHOP</span></h1>
-      <p>Premium 2b2t IRL Shop for All Your Needs.</p>
-      <button onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'});">Shop Now <i class="fa fa-arrow-right"></i></button>
-    </div>
-    <div class="home-image">
-      <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2e/Shulker_Box.png" alt="Shulker Box" style="width:220px;">
-    </div>
-  </section>
-
-  <!-- Shop Section -->
-  <section id="shop" class="shop-section main-section" style="display:none;">
-    <div class="shop-tabs">
-      <button class="tab active">🧰 kits</button>
-      <button class="tab">🛡️ armour</button>
-      <button class="tab">🗡️ tools</button>
-      <button class="tab">🍗 consumables</button>
-      <button class="tab">🔥 griefing</button>
-      <button class="tab">🏗️ build kits</button>
-      <button class="tab">🧱 build blocks</button>
-      <button class="tab"><i class="fa fa-chevron-right"></i></button>
-    </div>
-    <div class="products-grid">
-      <div class="product-card">
-        <img src="https://i.imgur.com/yourkit1.png" alt="PVP Kit V2">
-        <h2>PVP Kit V2</h2>
-        <p>$0.50</p>
-        <p class="stock">Stock: 12</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/yourkit2.png" alt="Survival Kit V3">
-        <h2>Survival Kit V3</h2>
-        <p>$0.60</p>
-        <p class="stock">Stock: 16</p>
-        <button>Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/yourkit3.png" alt="Survival Kit V2">
-        <h2>Survival Kit V2</h2>
-        <p>$0.60</p>
-        <p class="stock">Stock: 14</p>
-        <button>Add to Cart</button>
-      </div>
-      <!-- Add more product cards as needed -->
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about-section main-section" style="display:none;">
-    <h1 class="about-title"><span class="about-highlight">About</span> AFK SHOP</h1>
-    <h3 class="about-subtitle">Our story and mission</h3>
-    <div class="about-description">
-      <p>Welcome to AFK SHOP! This is a placeholder for your about description. You can edit this text to tell your story, your mission, and what makes your shop unique. Add as much detail as you like here!</p>
     </div>
   </section>
 
