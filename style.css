@@ -1,0 +1,240 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.navbar {
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px 18px 40px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 4px 0;
+  position: relative;
+  transition: color 0.2s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #a259ff;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 2px;
+  background: #a259ff;
+  border-radius: 2px;
+  margin-top: 4px;
+}
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: radial-gradient(ellipse at 60% 40%, #181a2a 60%, #0a0a0a 100%);
+  padding: 0 10vw;
+}
+
+.home-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.home-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.home-content p {
+  font-size: 1.3rem;
+  color: #bdbdbd;
+  margin-bottom: 30px;
+}
+
+.home-content button {
+  background: #2563eb;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  box-shadow: 0 2px 12px 0 rgba(37,99,235,0.12);
+}
+
+.home-content button:hover {
+  background: #1741a6;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-section {
+  padding: 40px 0 60px 0;
+  background: #101014;
+}
+
+.shop-tabs {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  background: #232a36;
+  color: #bdbdbd;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab.active, .tab:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.product-card {
+  background: #181a2a;
+  margin: 0;
+  padding: 24px 18px 28px 18px;
+  border-radius: 18px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+  color: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 18px;
+}
+
+.product-card h2 {
+  font-size: 1.3rem;
+  margin: 10px 0 6px 0;
+}
+
+.product-card p {
+  margin: 4px 0;
+  color: #bdbdbd;
+}
+
+.product-card .stock {
+  color: #a259ff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background: #a259ff;
+  color: #fff;
+  padding: 14px 0;
+  width: 90%;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 16px;
+  font-weight: 600;
+  transition: background 0.2s;
+  box-shadow: 0 2px 12px 0 rgba(162,89,255,0.12);
+}
+
+.product-card button:hover {
+  background: #7c3aed;
+}
+
+footer {
+  background: #181a2a;
+  color: #bdbdbd;
+  text-align: center;
+  padding: 18px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* About Section Styles */
+.about-title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+.about-highlight {
+  color: #4f8cff;
+  /* Use your preferred purple, e.g. #7c3aed or #a259ff if you want purple instead of blue */
+  font-size: 1.1em;
+}
+.about-subtitle {
+  text-align: center;
+  color: #bdbdbd;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.about-description {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: left;
+}
+  
